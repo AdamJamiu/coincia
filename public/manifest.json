@@ -1,19 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Coincia",
+  "name": "Coincia - Crypto Currency Portfolio",
+  "description": "Coincia is a crypto currency price tracker and portfolio. It is a progressive web app that works offline and can be installed on your phone or desktop.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "Cryptocurrency.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "Cryptocurrency.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "Cryptocurrency.png",
       "type": "image/png",
       "sizes": "512x512"
     }
