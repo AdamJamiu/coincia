@@ -60,6 +60,7 @@ const CryptoCurrencies = (props) => {
                 value={search}
                 size="lg"
                 label="Search Crypto"
+                helperText="Please enter your name"
             />
             <ALlCurrencies
                 theme={props.themeStatus}
