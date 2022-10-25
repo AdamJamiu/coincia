@@ -4,6 +4,8 @@ import './App.css';
 import AppBar from './components/navbar/Appbar';
 import Trending from './components/trending/Trending';
 import CryptoCurrencies from "./components/cryptocurrencies/CryptoCurrencies";
+import Modal from "./ui/Modal";
+
 
 
 function App() {
@@ -23,14 +25,19 @@ function App() {
       setCurrenCoinid(id);
     }
   };
-
   return (
     <div className={`${themeLight === true ? "" : "bg-[#0a1929] text-white"}`}>
       <AppBar themeStatus={themeLight} onSetTheme={onsetThemeHandler} />
       <Trending themeStatus={themeLight} onsetModal={onCloseModalHandler} />
       <CryptoCurrencies themeStatus={themeLight}
         onsetModal={onCloseModalHandler} />
-
+      {modalStatus && (
+        <Modal
+          themeStatus={themeLight}
+          onCoinId={coinId}
+          onsetModal={onCloseModalHandler}
+        />
+      )}
     </div>
   );
 }

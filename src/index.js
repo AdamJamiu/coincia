@@ -4,7 +4,7 @@ import './App.css';
 import App from './App';
 import { ThemeProvider } from "@material-tailwind/react";
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-// import reportWebVitals from './reportWebVitals';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
