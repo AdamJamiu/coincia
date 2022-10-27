@@ -1,12 +1,8 @@
-import { useState } from 'react';
-import logo from '../src/Cryptocurrency.png';
-import './App.css';
-import AppBar from './components/navbar/Appbar';
-import Trending from './components/trending/Trending';
+import React, { useState } from "react";
 import CryptoCurrencies from "./components/cryptocurrencies/CryptoCurrencies";
+import NavBar from "./components/navbar/NavBar";
+import Trending from "./components/trending/Trending";
 import Modal from "./ui/Modal";
-
-
 
 function App() {
   const [modalStatus, setModalStatus] = useState(false);
@@ -27,10 +23,12 @@ function App() {
   };
   return (
     <div className={`${themeLight === true ? "" : "bg-[#0a1929] text-white"}`}>
-      <AppBar themeStatus={themeLight} onSetTheme={onsetThemeHandler} />
+      <NavBar themeStatus={themeLight} onSetTheme={onsetThemeHandler} />
       <Trending themeStatus={themeLight} onsetModal={onCloseModalHandler} />
-      <CryptoCurrencies themeStatus={themeLight}
-        onsetModal={onCloseModalHandler} />
+      <CryptoCurrencies
+        themeStatus={themeLight}
+        onsetModal={onCloseModalHandler}
+      />
       {modalStatus && (
         <Modal
           themeStatus={themeLight}
