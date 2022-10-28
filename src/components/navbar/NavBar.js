@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import logo from "./Cryptocurrency.png";
+import { SignedIn, UserButton } from "@clerk/clerk-react";
 
 const NavBar = (props) => {
   return (
@@ -9,7 +10,11 @@ const NavBar = (props) => {
         <img className="" height={40} width={40} alt="logo" src={logo} />
         <h1 className="text-lg font-bold ml-4">Coincia</h1>
       </div>
-      <div>
+      <div className="flex flex-row items-center gap-6">
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+
         {props.themeStatus && (
           <FontAwesomeIcon
             onClick={props.onSetTheme}

@@ -3,6 +3,8 @@ import CryptoCurrencies from "./components/cryptocurrencies/CryptoCurrencies";
 import NavBar from "./components/navbar/NavBar";
 import Trending from "./components/trending/Trending";
 import Modal from "./ui/Modal";
+import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut } from "@clerk/clerk-react";
+
 
 function App() {
   const [modalStatus, setModalStatus] = useState(false);
@@ -21,22 +23,34 @@ function App() {
       setCurrenCoinid(id);
     }
   };
+
+
   return (
-    <div className={`${themeLight === true ? "" : "bg-[#0a1929] text-white"}`}>
-      <NavBar themeStatus={themeLight} onSetTheme={onsetThemeHandler} />
-      <Trending themeStatus={themeLight} onsetModal={onCloseModalHandler} />
-      <CryptoCurrencies
-        themeStatus={themeLight}
-        onsetModal={onCloseModalHandler}
-      />
-      {modalStatus && (
-        <Modal
-          themeStatus={themeLight}
-          onCoinId={coinId}
-          onsetModal={onCloseModalHandler}
-        />
-      )}
-    </div>
+
+    <ClerkProvider frontendApi={process.env.REACT_APP_CLERK_FRONTEND_API}>
+      <SignedIn>
+
+        <div className={`${themeLight === true ? "" : "bg-[#0a1929] text-white"}`}>
+          <NavBar themeStatus={themeLight} onSetTheme={onsetThemeHandler} />
+          <Trending themeStatus={themeLight} onsetModal={onCloseModalHandler} />
+          <CryptoCurrencies
+            themeStatus={themeLight}
+            onsetModal={onCloseModalHandler}
+          />
+          {modalStatus && (
+            <Modal
+              themeStatus={themeLight}
+              onCoinId={coinId}
+              onsetModal={onCloseModalHandler}
+            />
+          )}
+        </div>
+      </SignedIn>
+      <SignedOut>
+        <RedirectToSignIn />
+      </SignedOut>
+
+    </ClerkProvider>
   );
 }
 
