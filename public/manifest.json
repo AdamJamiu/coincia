@@ -1,7 +1,6 @@
 {
-  "short_name": "Coincia",
-  "name": "Coincia - Crypto Currency Portfolio",
-  "description": "Coincia is a crypto currency price tracker and portfolio. It is a progressive web app that works offline and can be installed on your phone or desktop.",
+  "short_name": "coincia",
+  "name": "coincia - The Crypto Price Tracker",
   "icons": [
     {
       "src": "Cryptocurrency.png",

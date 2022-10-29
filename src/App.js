@@ -23,13 +23,9 @@ function App() {
       setCurrenCoinid(id);
     }
   };
-
-
   return (
-
     <ClerkProvider frontendApi={process.env.REACT_APP_CLERK_FRONTEND_API}>
       <SignedIn>
-
         <div className={`${themeLight === true ? "" : "bg-[#0a1929] text-white"}`}>
           <NavBar themeStatus={themeLight} onSetTheme={onsetThemeHandler} />
           <Trending themeStatus={themeLight} onsetModal={onCloseModalHandler} />
@@ -46,10 +42,10 @@ function App() {
           )}
         </div>
       </SignedIn>
+
       <SignedOut>
         <RedirectToSignIn />
       </SignedOut>
-
     </ClerkProvider>
   );
 }

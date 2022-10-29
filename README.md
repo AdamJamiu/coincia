@@ -1,6 +1,6 @@
-# Coincia
+# CryptoFolio
 
-Coincia WebApp built with React is a crypto currency tracking and portfolio site. It is a very handy tool for crypto currency investors. You can watch the price, marketcap graph of any crypto currency , and predict possible future price.
+CryptoFolio WebApp built with React is a crypto currency tracking and portfolio site. It is a very handy tool for crypto currency investors. You can watch the price, marketcap graph of any crypto currency , and predict possible future price.
 
 ## Features
   - Various Crypto Currencies are available
@@ -14,7 +14,12 @@ Coincia WebApp built with React is a crypto currency tracking and portfolio site
 ## Preview
 
 
+![cryptofolio_gif](https://user-images.githubusercontent.com/79929708/174285633-0b057aba-ed19-43da-8dd6-1a91c57e42bb.gif)
 
+
+## Tech Stack
+
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react" />   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="ftailwind" />   
 
 ## Credit
  - <a href="https://www.npmjs.com/package/react-chartjs-2" >Chart js</a>
@@ -34,7 +39,7 @@ Coincia WebApp built with React is a crypto currency tracking and portfolio site
 ### Installation
 
 ```
-git clone https://github.com/AdamJamiu/coincia.git
+git clone https://github.com/manavsiddharthgupta/CryptoFolio.git
 
 npm install
 
