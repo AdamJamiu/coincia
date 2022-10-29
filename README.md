@@ -1,4 +1,4 @@
-# CryptoFolio
+# Coincia
 
 A tracking and portfolio website for cryptocurrencies, Coincia Web App was created with React. For those who invest in cryptocurrencies, it is a really useful tool. You may see the price and market capitalization graph of any cryptocurrency to forecast potential future prices.
 ## Features
