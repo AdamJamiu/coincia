@@ -2,11 +2,11 @@
 
 A tracking and portfolio website for cryptocurrencies, Coincia Web App was created with React. For those who invest in cryptocurrencies, it is a really useful tool. You may see the price and market capitalization graph of any cryptocurrency to forecast potential future prices.
 ## Features
-  - Various Crypto Currencies are available
   - Analyse of each cryptocoins prices and marketcap graph
   - Filter your search
-  - Graph contains prices and marketcap data upto a year
   - Important links like Main website, source code, discords and blog site is provided for each Crypto Currencies
+  - Various Crypto Currencies are available
+  - Graph contains prices and marketcap data upto a year
   - Dark mode
   - Trending Coins Section
   - User Authentication
